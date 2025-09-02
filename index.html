@@ -26,13 +26,22 @@
       {"@type": "EducationalOrganization", "name": "Universidad San Francisco Xavier (USFX)"}
     ],
     "knowsAbout": ["HTML", "CSS", "C++", "Git", "Desarrollo Web"],
-    "image": "../Curriculum-Personal/foto.jpg"
+    "image": "../Curriculum-Personal/foto.jpg",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://tu-dominio-o-github.io/curriculum"
+    }
   }
   </script>
 </head>
 <body>
   <!-- Skip link -->
   <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Encabezado principal -->
+  <header class="site-header">
+    <h1 class="nombre">Alejandra Veronica Terceros Arcani</h1>
+  </header>
 
   <div class="container">
     <!-- Barra lateral -->
@@ -44,21 +53,21 @@
         la programación en C++ y los proyectos colaborativos con Git.
       </p>
       
-      <nav aria-label="Información personal">
+      <nav role="navigation" aria-label="Información personal">
         <h2><img src="../Curriculum-Personal/habilidades.png" alt="" class="icon" loading="lazy"> Habilidades</h2>
         <ul class="skills">
-          <li><i class="fa-brands fa-html5"></i> HTML y CSS</li>
-          <li><i class="fa-solid fa-code"></i> C++ y POO</li>
-          <li><i class="fa-brands fa-git-alt"></i> Git y GitHub</li>
-          <li><i class="fa-solid fa-users"></i> Trabajo en equipo</li>
+          <li><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML y CSS</li>
+          <li><i class="fa-solid fa-code" aria-hidden="true"></i> C++ y POO</li>
+          <li><i class="fa-brands fa-git-alt" aria-hidden="true"></i> Git y GitHub</li>
+          <li><i class="fa-solid fa-users" aria-hidden="true"></i> Trabajo en equipo</li>
         </ul>
 
         <h2><img src="../Curriculum-Personal/contacto.png" alt="" class="icon" loading="lazy"> Contacto</h2>
         <ul>
-          <li><i class="fa-solid fa-envelope"></i> 
+          <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> 
             <a href="mailto:alejandra.terceros@uab.edu.bo">alejandra.terceros@uab.edu.bo</a>
           </li>
-          <li><i class="fa-solid fa-phone"></i> 
+          <li><i class="fa-solid fa-phone" aria-hidden="true"></i> 
             <a href="tel:+59169669938">+591 69669938</a>
           </li>
         </ul>
@@ -67,34 +76,62 @@
 
     <!-- Contenido principal -->
     <main id="contenido-principal" class="content">
-      <header>
-        <h1 class="nombre">Alejandra Veronica Terceros Arcani</h1>
-      </header>
-
       <article>
         <section class="card">
           <h2><img src="../Curriculum-Personal/educacion.png" alt="" class="icon" loading="lazy"> Formación Académica</h2>
           <ul>
-            <li>Instituto Tecnico Superior ITSEC - SUCRE</li>
-            <li>Bachiller en Humanidades</li>
-            <li>Estudiante de Ingeniería de Sistemas en la UAB</li>
-            <li>Estudiante de Ingeniería en Ciencias de la Computación en la USFX</li>
+            <li>Instituto Tecnico Superior <strong>ITSEC - SUCRE</strong></li>
+            <li>Bachiller de la Unidad Educativa <strong>My. Jose Agustin Catrillo</strong></li>
+            <li>Estudiante de Ingeniería de Sistemas en la <strong>UAB</strong></li>
+            <li>Estudiante de Ingeniería en Ciencias de la Computación en la <strong>USFX</strong></li>
           </ul>
         </section>
 
         <section class="card">
-          <h2><img src="../Curriculum-Personal/proyecto.png" alt="" class="icon" loading="lazy"> Proyectos</h2>
+          <h2><img src="../Curriculum-Personal/proyecto.png" alt="" class="icon" loading="lazy"> Certificaciones</h2>
           <p>
-            <strong>Juego en C++ con Unreal Engine:</strong> Implementación de un sistema
-            de bloques y obstáculos usando programación orientada a objetos.
+            Certificación de Reconocimiento <strong>Bachiller de Excelencia</strong> 
+            otorgado por la Unidad Educativa My. Jose Agustin Catrillo
+          </p>
+          <p>
+            Certificación en <strong>Mantenimiento e Instalación de Computadoras y Equipos de Vigilancia</strong> 
+            otorgado por el Centro de Capacitación Técnica Privada "ITBOL"
+          </p>
+          <p>
+            Certificación de Asistencia al <strong>24vo Congreso Nacional de Ciencias de la Computación</strong> 
+            otorgado por la CCBol
+          </p>
+          <p>
+            Certificación de Participación en el <strong>Congreso sobre Tecnologías de la Información y Comunicación</strong> 
+            otorgado por la CTICB
+          </p>
+          <p>
+            Certificación de <strong>Promotor de la Solidaridad</strong> 
+            otorgado por el Gobierno Autónomo Municipal de La Paz
+          </p>
+          <p>
+            Certificación en <strong>PhotoShop CS6 - Illustrator CS6</strong> 
+            otorgado por el Instituto CEGOS
+          </p>
+          <p>
+            Certificación de Aprobación en <strong>Dactilografía Computarizada</strong> 
+            otorgado por el Instituto Técnico Comercial "Eva Perón"
+          </p>
+          <p>
+            Certificación por el apoyo como Tutor, Apoyo Logístico, Coordinación y Organización en las <strong>XII Olimpiadas de Matemática, Física, Química, Idioma Aymara e Inglés</strong> 
+            otorgado por la Universidad Mayor de San Andrés
+          </p>
+          <p>
+            Certificación de Egreso del <strong>Curso de Aprendizaje de Conducción</strong> 
+            otorgado por la Escuela de Conducción Carburando Car
           </p>
         </section>
       </article>
-
-      <footer>
-        <p>&copy; 2025 Currículum de Alejandra Terceros Arcani</p>
-      </footer>
     </main>
   </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Currículum de Alejandra Terceros Arcani</p>
+  </footer>
 </body>
 </html>
