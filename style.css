@@ -1,40 +1,27 @@
+/* ====== Reset básico ====== */
 body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
     background: #fef6f9;
     color: #333;
+    line-height: 1.5;
 }
 
+/* ====== Contenedor principal ====== */
 .container {
     display: flex;
     min-height: 100vh;
 }
 
+/* ====== Barra lateral ====== */
 .sidebar {
-    background: #e6a5b0;
-    color: white;
+    background: #b23a48; /* color más oscuro para contraste AA */
+    color: #fff;
     padding: 30px 20px;
     width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.sidebar {
-    background: #e6a5b0;
-    color: white;
-    padding: 30px 20px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.nombre {
-    font-size: 3.2em;
-    color: #e6a5b0;
-    margin-bottom: 30px;
-    text-align: left;
 }
 
 .avatar {
@@ -46,6 +33,13 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
+/* ====== Títulos ====== */
+.nombre {
+    font-size: 2.4em;
+    color: #b23a48;
+    margin-bottom: 30px;
+    text-align: left;
+}
 
 .sidebar h2 {
     margin-top: 20px;
@@ -57,23 +51,29 @@ body {
     text-align: left;
 }
 
-.sidebar p, .sidebar li {
+/* ====== Texto ====== */
+.sidebar p, 
+.sidebar li {
     font-size: 0.95em;
     margin: 5px 0;
 }
 
-.skills i, .sidebar i {
+/* ====== Listas ====== */
+.skills i, 
+.sidebar i {
     margin-right: 8px;
-    color: white;
+    color: #fff;
 }
 
+/* ====== Contenido principal ====== */
 .content {
     flex: 1;
     padding: 40px;
 }
 
+/* ====== Tarjetas ====== */
 .card {
-    background: white;
+    background: #fff;
     border-radius: 12px;
     padding: 20px;
     margin-bottom: 20px;
@@ -81,13 +81,54 @@ body {
 }
 
 .card h2 {
-    color: #e6a5b0;
+    color: #b23a48;
     margin-bottom: 15px;
 }
 
+/* ====== Iconos personalizados ====== */
 .icon {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     vertical-align: middle;
     margin-right: 8px;
+}
+
+/* ====== Accesibilidad ====== */
+/* Skip link */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: .5rem 1rem;
+    background: #000;
+    color: #fff;
+    z-index: 1000;
+}
+
+/* Foco visible en enlaces y botones */
+a, button {
+    color: inherit;
+    text-decoration: none;
+}
+a:focus, button:focus {
+    outline: 3px solid #0a84ff;
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* Contraste en enlaces dentro de sidebar */
+.sidebar a {
+    color: #fff;
+    font-weight: 600;
+}
+.sidebar a:hover {
+    text-decoration: underline;
 }

@@ -1,60 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículum - Alejandra</title>
-    <link rel="stylesheet" href="../Curriculum-Personal/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- SEO -->
+  <title>Currículum de Alejandra Terceros Arcani</title>
+  <meta name="description" content="Currículum de Alejandra Terceros Arcani, estudiante de Tecnología en Internet y apasionada por el desarrollo web, C++ y proyectos colaborativos.">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../Curriculum-Personal/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Datos estructurados JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alejandra Veronica Terceros Arcani",
+    "email": "alejandra.terceros@uab.edu.bo",
+    "telephone": "+59169669938",
+    "alumniOf": [
+      {"@type": "EducationalOrganization", "name": "Instituto Tecnico Superior ITSEC - SUCRE"},
+      {"@type": "EducationalOrganization", "name": "Universidad Amazonica de Bolivia (UAB)"},
+      {"@type": "EducationalOrganization", "name": "Universidad San Francisco Xavier (USFX)"}
+    ],
+    "knowsAbout": ["HTML", "CSS", "C++", "Git", "Desarrollo Web"],
+    "image": "../Curriculum-Personal/foto.jpg"
+  }
+  </script>
 </head>
 <body>
-    <div class="container">
-        <!-- Barra lateral -->
-        <aside class="sidebar">
-            <img src="../Curriculum-Personal/foto.jpg" alt="Foto de perfil" class="avatar">
-            <p class="resumen">
-                Estudiante de Tecnología en Internet. Apasionada por el desarrollo web,
-                la programación en C++ y los proyectos colaborativos con Git.
-            </p>
-            
-            <h2><img src="../Curriculum-Personal/habilidades.png" class="icon"> Habilidades</h2>
-                <ul class="skills">
-                    <li><i class="fa-brands fa-html5"></i> HTML y CSS</li>
-                    <li><i class="fa-solid fa-code"></i> C++ y POO</li>
-                    <li><i class="fa-brands fa-git-alt"></i> Git y GitHub</li>
-                    <li><i class="fa-solid fa-users"></i> Trabajo en equipo</li>
-                </ul>
+  <!-- Skip link -->
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
 
+  <div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <img src="../Curriculum-Personal/foto.jpg" alt="Foto de perfil de Alejandra Terceros" class="avatar" loading="lazy" />
 
-            <h2><img src="../Curriculum-Personal/contacto.png" class="icon">Contacto </h2>
-            <p><i class="fa-solid fa-envelope"></i> alejandra.terceros@uab.edu.bo</p>
-            <p><i class="fa-solid fa-phone"></i> +591 69669938</p>
+      <p class="resumen">
+        Estudiante de Tecnología en Internet. Apasionada por el desarrollo web,
+        la programación en C++ y los proyectos colaborativos con Git.
+      </p>
+      
+      <nav aria-label="Información personal">
+        <h2><img src="../Curriculum-Personal/habilidades.png" alt="" class="icon" loading="lazy"> Habilidades</h2>
+        <ul class="skills">
+          <li><i class="fa-brands fa-html5"></i> HTML y CSS</li>
+          <li><i class="fa-solid fa-code"></i> C++ y POO</li>
+          <li><i class="fa-brands fa-git-alt"></i> Git y GitHub</li>
+          <li><i class="fa-solid fa-users"></i> Trabajo en equipo</li>
+        </ul>
 
-        </aside>
+        <h2><img src="../Curriculum-Personal/contacto.png" alt="" class="icon" loading="lazy"> Contacto</h2>
+        <ul>
+          <li><i class="fa-solid fa-envelope"></i> 
+            <a href="mailto:alejandra.terceros@uab.edu.bo">alejandra.terceros@uab.edu.bo</a>
+          </li>
+          <li><i class="fa-solid fa-phone"></i> 
+            <a href="tel:+59169669938">+591 69669938</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
 
-        <!-- Contenido principal -->
-        <main class="content">
-            <h1 class="nombre" >Alejandra Veronica Terceros Arcani</h1>
-            <section class="card">
-                <h2><img src="../Curriculum-Personal/educacion.png" class="icon">Formacion Academica</h2>
-                <ul>
-                    <li>Instituto Tecnico Superior ITSEC - SUCRE</li>
-                    <li>Bachiller en Humanidades</li>
-                    <li>Estudiante de la carrera de Ingenieria de Sistema en la UAB</li>
-                    <li>Estudiante de la carrera de Ingenieria en Ciencias de la Computacion en la USFX</li>
+    <!-- Contenido principal -->
+    <main id="contenido-principal" class="content">
+      <header>
+        <h1 class="nombre">Alejandra Veronica Terceros Arcani</h1>
+      </header>
 
-                </ul>
-            </section>
+      <article>
+        <section class="card">
+          <h2><img src="../Curriculum-Personal/educacion.png" alt="" class="icon" loading="lazy"> Formación Académica</h2>
+          <ul>
+            <li>Instituto Tecnico Superior ITSEC - SUCRE</li>
+            <li>Bachiller en Humanidades</li>
+            <li>Estudiante de Ingeniería de Sistemas en la UAB</li>
+            <li>Estudiante de Ingeniería en Ciencias de la Computación en la USFX</li>
+          </ul>
+        </section>
 
-            <section class="card">
-                <h2><img src="../Curriculum-Personal/proyecto.png" class="icon">Proyectos</h2>
-                <p>
-                    <strong>Juego en C++ con Unreal Engine:</strong> Implementación de un sistema
-                    de bloques y obstáculos usando programación orientada a objetos.
-                </p>
-            </section>
-        </main>
-    </div>
+        <section class="card">
+          <h2><img src="../Curriculum-Personal/proyecto.png" alt="" class="icon" loading="lazy"> Proyectos</h2>
+          <p>
+            <strong>Juego en C++ con Unreal Engine:</strong> Implementación de un sistema
+            de bloques y obstáculos usando programación orientada a objetos.
+          </p>
+        </section>
+      </article>
+
+      <footer>
+        <p>&copy; 2025 Currículum de Alejandra Terceros Arcani</p>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
