@@ -6,56 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Curriculum-Personal</title>
+    <meta name="description" content="Currículum de Alejandra Terceros, estudiante de Ingeniería en Sistemas y Ciencias de la Computación con habilidades en programación, software e innovación.">
     <link rel="stylesheet" href="../Curriculum-Personal/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alejandra Terceros",
+    "jobTitle": "Estudiante de Ingeniería en Sistemas e Ingeniería en Ciencias de la Computación",
+    "image": "../Curriculum-Personal/foto.jpg",
+    "url": "https://tusitio.github.io/curriculum-personal",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sucre",
+      "addressCountry": "Bolivia"
+    }
+  }
+  </script>
 </head>
 
 <body>
-    <!-- Barra de navegación -->
-    <nav class="navbar">
+
+   <nav class="navbar" role="navigation" aria-label="Navegación principal">
         <div class="contenedor">
-            <a href="#sobre-mi">Un poco de mí</a>
-            <a href="#certificaciones">Educacion</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#experiencia">Certificaciones</a>
-            <a href="#contactame">Contáctame</a>
+        <a href="#sobre-mi">Un poco de mí</a>
+        <a href="#certificaciones">Educación</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#experiencia">Certificaciones</a>
+        <a href="#contactame">Contáctame</a>
         </div>
     </nav>
 
-    <header>
-        <div class="textos">
-            <h1 class="titulo">Alejandra Terceros</h1>
-            <h3 class="subtitulo">Ing. de Sistemas eh Ing. en Ciencias de la Computacion</h3>
+  <header role="banner">
+    <div class="textos">
+      <h1 class="titulo">Alejandra Terceros</h1>
+      <h2 class="subtitulo">Ing. de Sistemas e Ing. en Ciencias de la Computación</h2>
+    </div>
+    <div class="sesgoabajo" aria-hidden="true"></div>
+  </header>
+
+    <main id="contenido-principal" role="main">
+    <!-- Secciones ya están con <section> (landmarks válidos) -->
+    <section class="acerca-de" id="sobre-mi" aria-labelledby="sobre-mi-titulo">
+      <div class="contenedor">
+        <div class="foto-perfil">
+          <img src="../Curriculum-Personal/foto.jpg" alt="Foto de Alejandra" loading="lazy">
         </div>
-        <div class="sesgoabajo"></div>
-    </header>
-
-    <main>
-        <section class="acerca-de" id="sobre-mi">
-        <div class="contenedor">
-            <!-- Imagen de perfil -->
-            <div class="foto-perfil">
-                <img src="../Curriculum-Personal/foto.jpg" alt="Foto de Alejandra">
-            </div>
-
-            <h2 class="sobre-nosotros">Hola mi nombre es Alejandra</h2>
-            <h3 class="slogan">y esto es un poco de mi ...</h3>
-
-            <p class="parrafo">
-                Soy estudiante de Ingeniería en Sistemas con gran 
-                interés en el desarrollo de software y la inteligencia artificial. 
-                Aunque me encuentro en las primeras etapas de mi carrera, 
-                ya he trabajado en proyectos personales y académicos donde desarrollé 
-                habilidades en programación, trabajo colaborativo y gestión de proyectos.
-            </p>
-
-            <p class="parrafo">
-                Mi objetivo es adquirir experiencia práctica en el área 
-                de desarrollo de software, aportar mis conocimientos en proyectos innovadores y 
-                seguir creciendo como profesional en el mundo tecnológico.
-            </p>
-        </div>
+        <h2 class="sobre-nosotros">Hola mi nombre es Alejandra</h2>
+        <h3 class="slogan">y esto es un poco de mí...</h3>
+        <p class="parrafo">
+          Soy estudiante de Ingeniería en Sistemas con gran 
+          interés en el desarrollo de software y la inteligencia artificial. 
+          Aunque me encuentro en las primeras etapas de mi carrera, 
+          ya he trabajado en proyectos personales y académicos donde desarrollé 
+          habilidades en programación, trabajo colaborativo y gestión de proyectos.
+        </p>
+        <p class="parrafo">
+          Mi objetivo es adquirir experiencia práctica en el área 
+          de desarrollo de software, aportar mis conocimientos en proyectos innovadores y 
+          seguir creciendo como profesional en el mundo tecnológico.
+        </p>
+      </div>
     </section>
 
         <section class="galeria">
@@ -178,8 +192,42 @@
         <section class="experiencia" id="experiencia">
             <div class="contenedor">
                 <h2 class="sobre-nosotros">Certificaciones</h2>
-                <h3 class="slogan">Nuestro recorrido profesional</h3>
-                <p class="parrafo">Aquí puedes detallar tu experiencia laboral y proyectos importantes.</p>
+                <h3 class="slogan">Algunos reconocimientos y certificaciones</h3>
+                <div class="cards">
+                    <div class="card">
+                        <h4>Bachiller de Excelencia</h4>
+                        <p>otorgado por la Unidad Educativa My. Jose Agustin Catrillo</p>
+                        <p>LA PAZ</p>
+                    </div>
+                    <div class="card">
+                        <h4>Congreso sobre Tecnologías de la Información y Comunicación</h4>
+                        <p>otorgado por la CTICB</p>
+                        <p>SUCRE</p>
+                    </div>
+                    <div class="card">
+                        <h4>24vo Congreso Nacional de Ciencias de la Computación</h4>
+                        <p>otorgado por la CCBol</p>
+                        <p>SUCRE</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <h4>PhotoShop CS6 - Illustrator CS6</h4>
+                        <p>otorgado por el Instituto CEGOS</p>
+                        <p>LA PAZ</p>
+                    </div>
+                    <div class="card">
+                        <h4>Dactilografía Computarizada</h4>
+                        <p>otorgado por el Instituto Técnico Comercial "Eva Perón"</p>
+                        <p>LA PAZ</p>
+                    </div>
+                    <div class="card">
+                        <h4>Tutor, Apoyo Logístico y Organización</h4>
+                        <h4>XII Olimpiadas de Matemática, Física, Química, Idioma Aymara e Inglés</h4>
+                        <p>otorgado por la UMSA</p>
+                        <p>LA PAZ</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
