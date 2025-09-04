@@ -153,6 +153,8 @@ header .boton:hover {
     margin-bottom: 13px;
     font-weight: 300;
     text-align: justify;
+    hyphens: auto; 
+    text-justify: inter-word;
     line-height: 24px;
     color: #4a2c3e;
 }
