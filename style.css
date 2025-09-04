@@ -263,22 +263,54 @@ header .boton:hover {
     color: #800020;
     text-align: center;
 }
-
-.clientes {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 64px;
-    width: 100%;
-    justify-content: space-between;
+.clientes { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 30px; /* espacio entre elementos */ 
+    margin-bottom: 64px; 
 }
-
 .cliente {
-    width: 30%;
+    position: relative;
+    width: calc(10.33% - 20px); /* mantiene tu configuración */
+    text-align: center; /* centra la imagen y el texto */
 }
 
 .cliente img {
-    width: 100%;
+    width: 100%; /* ocupa todo el contenedor */
+    max-width: 60px; /* limita tamaño máximo */
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
 }
+
+/* Agrandar al pasar el mouse pero sin exceder el contenedor */
+.cliente:hover img {
+    transform: scale(1.2);
+}
+
+/* Texto overlay */
+.texto-habilidad {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(128, 0, 32, 0.7);
+    color: #fff0f6;
+    text-align: center;
+    padding: 4px;
+    font-size: 12px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+}
+
+.cliente:hover .texto-habilidad {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
 
 /* Footer */
 footer {
